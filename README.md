@@ -5,11 +5,11 @@ Works with Processing version 2.2.1
 
 BEFORE USING:
 
-1-Download GSVideo library
+1) Download GSVideo library
 
-2-Download/fill out .csv tables from this repository
+2) Download/fill out .csv tables from this repository
 
-3-Update OpBoxMonitor code with directory of .csv tables
+3) Update OpBoxMonitor code with directory of .csv tables
 
 
 1) GSVideo
