@@ -30,7 +30,7 @@ String date_time_str;
 final char DELIM = '|';
 DataOutputStream dstream_beh, dstream_log, dstream_trk;
 
-// Change the following string to the directory where SubjectWeights.csv is located, be sure to use '/' instead of '\' -> cannot copy paste from explorer
+// Change the following string to the directory where SubjectWeights.csv is located, be sure to use '/' instead of '\' -> cannot copy+paste from explorer
 String dir_tables = "C:/Users/TestUser/Documents/OpBox/"; // Example directory location string
 String file_subj_info;
 
