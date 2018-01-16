@@ -4,7 +4,7 @@ Send/receive serial data from Arduino and display task details in real time, sav
 Works with Processing version 2.2.1
 
 BEFORE USING:
-
+--
 1) Download GSVideo library
 
 2) Download/fill out .csv tables from this repository
@@ -13,8 +13,8 @@ BEFORE USING:
 
 
 
--GSVideo-
-
+GSVideo
+--
 Integration with webcams for video monitoring and capturing requires GSVideo library.
 Download and place in your Processing libraries folder
 http://gsvideo.sourceforge.net/#download
@@ -22,10 +22,10 @@ http://gsvideo.sourceforge.net/#download
 When exporting application, GSVideo library needs to be copied to application directory manually
 For more info, visit http://codeanticode.wordpress.com/2012/02/23/gsvideo-tips/
 
--.csv Tables-
-
 BoxTable.csv
+-
 Each row defines parameters for a box which may have multiple subjects
+
 Room: ID for room
 
 Box: ID for box - can have multiple box 1s if in separate rooms
@@ -55,7 +55,7 @@ RewardNumPulse:
 Notes: Notes for user regarding that box. Not used in code.
 
 SubjectTable.csv
-
+-
 Subject: ID for a particular subject/animal
 
 Room: Room number or ID
@@ -96,7 +96,7 @@ WinDur: Number of trials that must be completed before a switch can occur
 
 WinCrit: Minimum accuracy required for switch (over last 100 trials)
 
--OpBoxMonitor code-
+OpBoxMonitor Code
+-
 One line in the sketch needs to be modified in order to function properly:
-
-In line 34, the dir_tables variable needs to be changed to reference the local directory in which the two .csv files from this repository are stored. As long as both tables are stored in this location with original filenames, this is the only modification that needs to be made.
+In line 34, the dir_tables string needs to be changed to reference the local directory in which the two .csv files from this repository are stored. As long as both tables are stored in this location with original filenames, this is the only modification that needs to be made.
