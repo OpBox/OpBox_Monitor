@@ -1,0 +1,9 @@
+Subject,Room,Box,Group,Protocol,GoStimIDs,NogoStimIDs,Switch_GoStimIDs,Switch_NogoStimIDs,SaveBack,NumHitsToAdvance,MeanITI,ProbGo,DowntimeFreeRwdMin,MaxRT,MaxMT,NumFreeHits,RepeatFalseAlarm,WinDur,WinCrit
+LickGo,,0,,LickGo,L,H,L,H,,,2,100,3,1000,3000,10,,,
+NPGo,,1,,NPGo,L,H,L,H,,,0,100,5,10000,60000,10,,,
+RandInt20,,2,,RandInt20,L,H,L,H,,,20,100,5,5000,30000,10,1,100,85
+RandInt40,,3,,RandInt40,L,H,L,H,,,40,100,5,3000,15000,5,1,100,85
+RandIntGoNogo,,4,,RandIntGoNogo,L,H,L,H,,,8,20,10,1000,5000,3,1,100,85
+RandIntGoNogoDisc3,,5,,RandIntGoNogoDisc3,L,MH,L,MH,,,12,33,10,1000,5000,3,1,100,85
+RandIntGoNogoSwitch,,6,,RandIntGoNogoSwitch,L,M,M,H,,,8,20,10,1000,5000,3,1,100,85
+RAT,423,0,,RandIntGoNogoSwitch,L,M,M,H,,,8,20,10,1000,5000,3,1,100,85
