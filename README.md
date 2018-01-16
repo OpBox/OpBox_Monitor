@@ -12,7 +12,8 @@ BEFORE USING:
 3) Update OpBoxMonitor code with directory of .csv tables
 
 
-1) GSVideo
+
+-GSVideo-
 
 Integration with webcams for video monitoring and capturing requires GSVideo library.
 Download and place in your Processing libraries folder
@@ -21,7 +22,7 @@ http://gsvideo.sourceforge.net/#download
 When exporting application, GSVideo library needs to be copied to application directory manually
 For more info, visit http://codeanticode.wordpress.com/2012/02/23/gsvideo-tips/
 
-2) .csv Tables
+-.csv Tables-
 
 BoxTable.csv
 Each row defines parameters for a box which may have multiple subjects
@@ -95,7 +96,7 @@ WinDur: Number of trials that must be completed before a switch can occur
 
 WinCrit: Minimum accuracy required for switch (over last 100 trials)
 
-3) OpBoxMonitor code
+-OpBoxMonitor code-
 One line in the sketch needs to be modified in order to function properly:
 
 In line 34, the dir_tables variable needs to be changed to reference the local directory in which the two .csv files from this repository are stored. As long as both tables are stored in this location with original filenames, this is the only modification that needs to be made.
