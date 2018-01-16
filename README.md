@@ -7,7 +7,7 @@ BEFORE USING:
 --
 1) Download GSVideo library
 
-2) Download/fill out .csv tables from this repository
+2) Download/fill out .csv tables from this repository (BoxTable and SubjectTable)
 
 3) Update OpBoxMonitor code with directory of .csv tables
 
