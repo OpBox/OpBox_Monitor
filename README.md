@@ -4,12 +4,16 @@ Send/receive serial data from Arduino and display task details in real time, sav
 Works with Processing version 2.2.1
 
 BEFORE USING:
+
 1-Download GSVideo library
+
 2-Download/fill out .csv tables from this repository
+
 3-Update OpBoxMonitor code with directory of .csv tables
 
 
 1) GSVideo
+
 Integration with webcams for video monitoring and capturing requires GSVideo library.
 Download and place in your Processing libraries folder
 http://gsvideo.sourceforge.net/#download
@@ -18,6 +22,7 @@ When exporting application, GSVideo library needs to be copied to application di
 For more info, visit http://codeanticode.wordpress.com/2012/02/23/gsvideo-tips/
 
 2) .csv Tables
+
 BoxTable.csv
 Each row defines parameters for a box which may have multiple subjects
 Room: ID for room
