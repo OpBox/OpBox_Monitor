@@ -30,7 +30,8 @@ String date_time_str;
 final char DELIM = '|';
 DataOutputStream dstream_beh, dstream_log, dstream_trk;
 
-String dir_tables = "/Dropbox (KimchiLab)/KimchiLab/Behavior/GeneralBehavior/";
+// Change the following string to the directory where SubjectWeights.csv is located, be sure to use '/' instead of '\' -> cannot copy paste from explorer
+String dir_tables = "C:/Users/TestUser/Documents/OpBox/"; // Example directory location string
 String file_subj_info;
 
 // Camera variables
@@ -143,10 +144,9 @@ void setup()
   size(WINDOW_WIDTH, WINDOW_HEIGHT); // size() function must be the first line of code, or the first code inside setup() as per processing documentation
   frameRate(DRAW_FRAMERATE); // Draw refresh rate: Update draw loop # per sec, should be at least cam_framerate
 
-  // Change directory to point to right drive based on drive for sketch
-  dir_tables = sketchPath.substring(0, 2) + "/Dropbox (KimchiLab)/KimchiLab/Behavior/GeneralBehavior/";
-  println(dir_tables);
-  file_subj_info = dir_tables + "SubjectTable.csv";
+  // Create variable with full path to SubjectTable, based on directory string from above
+  file_subj_info = dir_tables + "SubjectTable.csv";  // Should not need to be changed unless renamed from SubjectTable.csv
+
 
   // Get Subject and Box info
   try {
@@ -158,6 +158,7 @@ void setup()
       exit(); 
       return; // only exits after setup loop complete, so force return. does not work if called within Error function (returns to setup)
     }
+    
     // General file_pre information: subject name & date/time
     date_time_str = DateTimeStr(); // Save as variable for other files as well
     file_pre = subject_info.name + "-" + date_time_str;
@@ -1202,7 +1203,7 @@ class BoxInfo {
 
   void LoadBoxInfo(int id_box, int room) {
     // Load Table of subjects info
-    String file_box_info = dir_tables + "BoxTable.csv";
+    String file_box_info = dir_tables + "BoxTable.csv"; // Should not be changed unless BoxTable.csv is renamed
     Table table = loadTable(file_box_info, "header");
 
     for (TableRow row : table.findRows (str (id_box), "Box")) {
